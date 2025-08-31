@@ -1,6 +1,6 @@
 from celery import shared_task
 from gql import gql, Client
-from gql.transport.requests import RequestsHTTPTransport
+from gql.transport.requests import requests, RequestsHTTPTransport
 from datetime import datetime
 
 GRAPHQL_URL = "http://localhost:8000/graphql"
