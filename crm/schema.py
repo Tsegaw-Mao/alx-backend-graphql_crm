@@ -127,7 +127,7 @@ class Query(graphene.ObjectType):
     all_products = DjangoFilterConnectionField(ProductNode)
     all_orders = DjangoFilterConnectionField(OrderNode)
 import graphene
-from .models import Product
+from crm.models import Product
 from graphene_django.types import DjangoObjectType
 
 class ProductType(DjangoObjectType):
